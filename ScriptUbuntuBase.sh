@@ -8,12 +8,15 @@
 #usermod -aG sudo robson
 
 sudo apt update
+sudo apt install -y -f wget curl
+sudo echo 'deb http://download.webmin.com/download/repository sarge contrib' >>  /etc/apt/sources.list
+wget -q -O- http://www.webmin.com/jcameron-key.asc | sudo apt-key add
+
+sudo apt update
 sudo apt upgrade  -y -f
 sudo apt dist-upgrade  -y -f
-sudo apt install -y -f  mariadb-server redis-server redis-tools gcc g++ make curl nano vim git zsh python2 python3 nginx certbot python3-certbot-nginx rar unzip zip unrar htop ffmpeg make build-essential
-curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - &&\
+sudo apt install -y -f webmin gcc g++ make nano vim git zsh python2 python3 certbot rar unzip zip unrar htop ffmpeg make build-essential
 sudo apt update
-sudo apt install -y -f nodejs
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
@@ -47,5 +50,4 @@ zinit for \
    light-mode spaceship-prompt/spaceship-prompt
 ### End of Zinit's plugins" >> ~/.zshrc
 
-sudo npm install -g pm2
 zsh
