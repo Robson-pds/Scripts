@@ -9,7 +9,9 @@
 
 sudo apt update
 sudo apt install -y -f wget curl
-sudo echo 'deb http://download.webmin.com/download/repository sarge contrib' >>  /etc/apt/sources.list
+sudo su
+echo 'deb http://download.webmin.com/download/repository sarge contrib' >>  /etc/apt/sources.list
+exit
 wget -q -O- http://www.webmin.com/jcameron-key.asc | sudo apt-key add
 
 sudo apt update
