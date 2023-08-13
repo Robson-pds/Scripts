@@ -51,5 +51,3 @@ zinit for \
    light-mode zsh-users/zsh-completions \
    light-mode spaceship-prompt/spaceship-prompt
 ### End of Zinit's plugins" >> ~/.zshrc
-
-zsh
