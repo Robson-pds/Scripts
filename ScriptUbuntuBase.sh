@@ -17,3 +17,6 @@ sudo apt install -y -f gcc g++ make nano vim git zsh python2 python3 certbot rar
 sudo apt update
 
 sh -c "`curl -fsSL https://raw.githubusercontent.com/skwp/dotfiles/master/install.sh`" -s ask
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+echo 'source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh' >> .zshrc
