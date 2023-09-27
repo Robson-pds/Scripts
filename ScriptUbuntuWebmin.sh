@@ -9,11 +9,13 @@
 
 sudo apt update
 sudo apt install -y -f wget curl
+sudo su
+echo 'deb http://download.webmin.com/download/repository sarge contrib' >>  /etc/apt/sources.list
+exit
+wget -q -O- http://www.webmin.com/jcameron-key.asc | sudo apt-key add
 
 sudo apt update
 sudo apt upgrade  -y -f
 sudo apt dist-upgrade  -y -f
-sudo apt install -y -f gcc g++ make nano vim git zsh python2 python3 certbot rar unzip zip unrar htop ffmpeg make build-essential
+sudo apt install -y -f webmin
 sudo apt update
-
-sh -c "`curl -fsSL https://raw.githubusercontent.com/skwp/dotfiles/master/install.sh`" -s ask
