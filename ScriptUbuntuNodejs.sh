@@ -1,8 +1,6 @@
 #!/bin/bash
 
 sudo apt update
-sudo apt upgrade  -y -f
-sudo apt dist-upgrade  -y -f
 sudo apt-get install -y ca-certificates curl gnupg
 sudo mkdir -p /etc/apt/keyrings
 curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg

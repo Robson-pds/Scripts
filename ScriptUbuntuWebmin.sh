@@ -15,6 +15,4 @@ exit
 wget -q -O- http://www.webmin.com/jcameron-key.asc | sudo apt-key add
 
 sudo apt update
-sudo apt upgrade  -y -f
-sudo apt dist-upgrade  -y -f
 sudo apt install -y -f webmin

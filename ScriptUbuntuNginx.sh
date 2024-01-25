@@ -8,6 +8,4 @@
 #usermod -aG sudo robson
 
 sudo apt update
-sudo apt upgrade  -y -f
-sudo apt dist-upgrade  -y -f
 sudo apt install -y -f  nginx certbot python3-certbot-nginx
