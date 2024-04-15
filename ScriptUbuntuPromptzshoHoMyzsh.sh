@@ -1,5 +1,5 @@
 #!/bin/bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/Robson-pds/ohmyzsh/master/tools/install.sh)"
 
 echo '# Configuração da interface do terminal com spaceship-prompt
 SPACESHIP_PROMPT_ORDER=(
