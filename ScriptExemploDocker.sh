@@ -7,3 +7,6 @@ docker run --name ServerMysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=mysecretpasswo
 docker run --name ServerMariadb -p 3307:3306 -e MYSQL_ROOT_PASSWORD=mysecretpassword -d mariadb
 #Imagem padrão do Redis
 docker run --name ServerRedis -p 6379:6379 -d redis
+
+#Restore do banco mysql do docker
+docker exec -i ServerMariadb mariadb -u root --password='mysecretpassword' nomebanco < /mnt/c/banco/nome_banco.sql
