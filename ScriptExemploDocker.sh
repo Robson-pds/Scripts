@@ -10,3 +10,6 @@ docker run --name ServerRedis -p 6379:6379 -d redis
 
 #Restore do banco mysql do docker
 docker exec -i ServerMariadb mariadb -u root --password='mysecretpassword' nomebanco < /mnt/c/banco/nome_banco.sql
+
+#Restore do banco PostgresSQl do docker
+docker exec -i ServerpostgresSQL psql --username postgres banco < /mnt/c/PostgresSql/banco.sql
